@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.cursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #efefef;
+    z-index: 9999;
+}
+
+.h-right ul li a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.2s linear;
+}
+
+.h-right ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #dd791b;
+    left: 0;
+    bottom: 0;
+    transition: all 0.2s linear;
+}
+
+.h-right ul li a:hover::after {
+    width: 100%;
+}
+
+.h-right ul li a:hover {
+    color: rgba(231, 231, 231, 0.8);
+}
+
+.cover-btn a {
+    transition: all 0.3s ease;
+}
+
+.cover-btn a:hover {
+    background-color: #ee4c;
+    color: #111;
+}
+
+.cover-circle span {
+    animation: circle-shadow 1.5s linear infinite;
+}
+
+@keyframes circle-shadow {
+    0% {
+        box-shadow: 0 0 0 0px rgba(251, 255, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 5px rgba(225, 255, 28, 0.496);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(238, 255, 127, 0);
+    }
+}
+
+
+.move-btn {
+    transition: all 0.3s ease;
+}
+
+.move-btn:hover {
+    background-color: #dd791b;
+    color: #fafafa;
+    border-color: #dd791b;
+}

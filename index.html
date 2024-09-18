@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="overflow-x-hidden bg-[#212121]">
+    <div class="cursor"></div>
+
+    <header
+        class="header fixed top-0 left-0 w-full flex justify-between items-center  text-[#efefef] px-[85px] py-[25px] z-999">
+        <div class="h-left">
+            <h3 class="text-[25px] font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                RANDIT
+            </h3>
+        </div>
+        <div class="h-right">
+            <ul class="flex gap-10">
+                <li class="text-[17px] font-light"><a href="#" class="inline-block"><i class=" fi fi-rr-home mr-2 text-[14px]"></i>Home</a>
+                </li>
+                <li class="text-[17px] font-light"><a href="#" class="inline-block"><i class=" fi fi-rr-info mr-2 text-[14px]"></i>About</a>
+                </li>
+                <li class="text-[17px] font-light"><a href="#" class="inline-block"><i class=" fi fi-rr-apps mr-2 text-[14px]"></i>Services</a>
+                </li>
+                <li class="text-[17px] font-light"><a href="#" class="inline-block"><i class=" fi fi-rr-envelope mr-2 text-[14px]"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="cover bg-[#212121] h-screen w-full flex flex-col justify-center items-center text-[#ee4c]">
+        <div class="content cursor-default mt-[8vh]">
+            <div class="flex flex-col justify-center">
+                <span class="cover-h1-span inline-block overflow-hidden px-3">
+                    <h1 class="text-[9vw] leading-[9vw] uppercase font-bold">We provide</h1>
+                </span>
+                <span
+                    class="cover-h1-span cover-circle inline-block overflow-hidden flex justify-center items-center gap-[2.5vw] px-3">
+                    <span class="w-[7vw] h-[7vw] bg-[#dd791b] rounded-full"></span>
+                    <h1 class="text-[9vw] leading-[9vw] uppercase font-bold">Best Services</h1>
+                </span>
+                <span class="cover-btn mt-10 inline-block px-3 w-fit">
+                    <a href="#"
+                        class="bg-transparent border-2 border-[#ee4c] text-[#efefef] px-12 py-4 rounded-full uppercase font-bold flex items-center justify-center">
+                        Learn More <i class="fi fi-rr-arrow-down mt-1 ml-4"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="move h-screen w-full bg-zinc-800 flex justify-center items-center rounded-[5vw] rounded-[5vw]">
+        <div class="move-div w-[75%] h-[75%] bg-[#ee4c] flex flex-col justify-center px-[3vw] rounded-[3vw]">
+            <h1 class="text-[6.2vw] leading-[6.2vw] uppercase font-bold">Experienced...</h1>
+            <h1 class="text-[6.2vw] leading-[6.2vw] uppercase font-bold pb-[3vw] mb-[3vw] border-b-4 border-[#dd791b]">
+                Best Animations
+            </h1>
+            <div class="flex justify-end">
+                <a href="#"
+                    class="move-btn bg-transparent border-2 border-[#111] text-[#111] px-12 py-4 rounded-full uppercase font-bold flex items-center justify-center">
+                    <i class="fi fi-rr-headphones mt-1 mr-4"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
